@@ -8,11 +8,12 @@
     <!-- FONT FAMILY -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
 
     <!-- CSS LINK -->
-    <link rel="stylesheet" href="sass/sass.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- FAVICON LINK -->
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
@@ -21,7 +22,45 @@
 </head>
 
 <body>
-    hello world
+    <div class="container">
+        <header class="header">
+            <img src="img/logo.png" alt="logo" class="logo">
+
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Search hotel">
+
+                <button class="search__button">
+                    <ion-icon name="search-outline" class="search__icon"></ion-icon>
+                </button>
+            </form>
+
+            <div class="user-nav">
+                <div class="user-nav__icon-box">
+                    <ion-icon name="bookmark" class="user-nav__icon"></ion-icon>
+                    <span class="user-nav__notif">7</span>
+                </div>
+
+                <div class="user-nav__icon-box">
+                    <ion-icon name="chatbox" class="user-nav__icon"></ion-icon>
+                    <span class="user-nav__notif">13</span>
+                </div>
+
+                <div class="user-nav__image-user">
+                    <img src="img/amir-profile.jpg" alt="user profile" class="user-nav__image"> 
+                    <span class="user-nav__name">Amir</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <nav class="navigation">navigation</nav>
+
+            <div class="hotel-view">hotel view</div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>F
 </body>
 
 </html>

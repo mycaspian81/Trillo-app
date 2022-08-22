@@ -1,3 +1,17 @@
+:root {
+  --Primary: #eb2f64;
+  --Primary-light: #FF3366;
+  --Primary-dark: #BA265D;
+  --Grey-light-1: #faf9f9;
+  --Grey-light-2: #f4f2f2;
+  --Grey-light-3: #f0eeee;
+  --Grey-light-4: #ccc;
+  --Grey-dark-1: #333;
+  --Grey-dark-2: #777;
+  --Grey-dark-3: #999;
+  --dark-shadow: 0 3rem 6rem rgba(0,0,0,.3)
+; }
+
 *,
 *::after,
 *::before {
@@ -9,6 +23,35 @@ html {
   font-size: 62.5%; }
 
 body {
+  background-image: linear-gradient(to right bottom, var(--Primary-light), var(--Primary-dark));
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   box-sizing: border-box;
-  font-size: 1.6;
-  line-height: 1.6; }
+  color: var(--Grey-dark-2); }
+
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--Grey-light-2); }
+
+.logo {
+  height: 6rem; }
+
+.container {
+  max-width: 120rem;
+  min-height: 50rem;
+  margin: 8rem auto;
+  box-shadow: var(--dark-shadow);
+  background-color: var(--Grey-light-2); }
+
+.content {
+  display: flex; }
+
+.navigation {
+  background-color: var(--Grey-dark-1);
+  flex: 0 0 18%; }
+
+.hotel-view {
+  flex: 1;
+  background-color: orange; }

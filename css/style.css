@@ -1,0 +1,113 @@
+:root {
+  --Primary: #eb2f64;
+  --Primary-light: #FF3366;
+  --Primary-dark: #BA265D;
+  --Grey-light-1: #faf9f9;
+  --Grey-light-2: #f4f2f2;
+  --Grey-light-3: #f0eeee;
+  --Grey-light-4: #ccc;
+  --Grey-dark-1: #333;
+  --Grey-dark-2: #777;
+  --Grey-dark-3: #999;
+  --dark-shadow: 0 3rem 6rem rgba(0,0,0,.3)
+; }
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-image: linear-gradient(to right bottom, var(--Primary-light), var(--Primary-dark));
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  color: var(--Grey-dark-2); }
+
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--Grey-light-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  padding: 0 3rem; }
+
+.logo {
+  height: 3.25rem; }
+
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .search__input {
+    border: none;
+    background-color: var(--Grey-light-2);
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    padding: .7rem 2rem;
+    border-radius: 10rem;
+    width: 90%;
+    transition: all .2s;
+    margin-right: -3.5rem; }
+    .search__input:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--Grey-light-3); }
+    .search__input::placeholder {
+      color: var(--Grey-light-4);
+      font-weight: 300; }
+    .search__input::-webkit-input-placeholder {
+      color: var(--Grey-light-4);
+      font-weight: 300; }
+  .search__button {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: var(--grey-light-2); }
+  .search__icon {
+    height: 2.25rem;
+    width: 2.25rem; }
+
+.user-nav {
+  display: flex;
+  align-items: center;
+  gap: 4rem; }
+  .user-nav__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    color: var(--grey-light-2); }
+  .user-nav__image-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
+  .user-nav__image {
+    height: 3.75rem;
+    border-radius: 50%; }
+
+.container {
+  max-width: 120rem;
+  min-height: 50rem;
+  margin: 8rem auto;
+  box-shadow: var(--dark-shadow);
+  background-color: var(--Grey-light-2); }
+
+.content {
+  display: flex; }
+
+.navigation {
+  background-color: var(--Grey-dark-1);
+  flex: 0 0 18%; }
+
+.hotel-view {
+  flex: 1;
+  background-color: orange; }
