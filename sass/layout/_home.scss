@@ -12,12 +12,12 @@
     display: flex;
 }
 
-.navigation {
+.side-nav {
     background-color: var(--Grey-dark-1);
     flex: 0 0 18%;
 }
 
 .hotel-view {
     flex: 1;
-    background-color: orange;
+    height: 80rem;
 }

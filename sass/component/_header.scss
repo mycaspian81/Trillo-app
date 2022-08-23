@@ -1,16 +1,17 @@
 .header {
     height: 7rem;
     background-color: #fff;
-    border-bottom: var(--Grey-light-2);
+    border-bottom: 2px solid var(--Grey-light-2);
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.4rem;
-    padding: 0 3rem;
+    padding-left: 2rem;
 }
 
 .logo {
     height: 3.25rem;
+    cursor: pointer;
 }
 
 .search {
@@ -65,9 +66,25 @@
 .user-nav {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    height: 100%;
 
-    &__icon-box {}
+    & > * {
+        padding: 2rem;
+        align-self: stretch;
+        cursor: pointer;
+    }
+
+    & > *:hover {
+        background-color: var(--Grey-light-3);
+    }
+
+
+    &__icon-box {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     &__icon {
         height: 2.25rem;
@@ -75,7 +92,21 @@
         color: var(--grey-light-2);
     }
 
-    &__notif {}
+    &__notif {
+        font-size: .8rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: var(--Primary);
+        color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 2rem;
+        left: 3.5rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     &__image-user {
         display: flex;
