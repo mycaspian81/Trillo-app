@@ -1,0 +1,62 @@
+.description {
+    flex: 0 0 60%;
+    box-shadow: var(--light-shadow);
+    background-color: var(--Grey-light-1);
+    padding: 3rem;
+    border-radius: .2rem;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-bottom: 3rem;
+        border-bottom: var(--line);
+    }
+
+    .list {
+        padding: 3rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.4rem;
+        border-bottom: var(--line);
+
+        &__item {
+            flex: 0 0 50%;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            padding: .4rem;
+        }
+
+        &__icon {
+            color: var(--Primary);
+            font-weight: 300;
+        }
+    }
+
+    &__recommend {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 3rem;
+    }
+
+    &__count {
+        font-size: 1.4rem;
+        color: var(--Grey-dark-3);
+    }
+
+    &__friends {}
+
+    &__photo {
+        box-sizing: content-box;
+        width: 4rem;
+        border: 3px solid var(--Grey-light-1);
+        border-radius: 50%;
+        
+        &:not(:last-child) {
+            margin-right: -2rem;
+        }
+    }
+}
