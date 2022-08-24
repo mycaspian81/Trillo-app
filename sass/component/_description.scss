@@ -1,9 +1,4 @@
 .description {
-    flex: 0 0 60%;
-    box-shadow: var(--light-shadow);
-    background-color: var(--Grey-light-1);
-    padding: 3rem;
-    border-radius: .2rem;
 
     &__text {
         display: flex;
@@ -46,8 +41,6 @@
         font-size: 1.4rem;
         color: var(--Grey-dark-3);
     }
-
-    &__friends {}
 
     &__photo {
         box-sizing: content-box;
