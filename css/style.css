@@ -12,6 +12,32 @@
   --dark-shadow: 0 3rem 6rem rgba(0,0,0,.3)
 ; }
 
+.btn-inline {
+  display: inline-block;
+  font-size: inherit;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: .1rem solid currentColor;
+  color: var(--Primary);
+  padding: .3rem;
+  transition: all .3s; }
+  .btn-inline:hover {
+    color: var(--Primary-dark); }
+  .btn-inline:focus {
+    animation: pulsate 1s infinite; }
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none; }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); }
+  100% {
+    transform: scale(1);
+    box-shadow: none; } }
+
 *,
 *::after,
 *::before {
@@ -28,6 +54,11 @@ body {
   font-weight: 400;
   box-sizing: border-box;
   color: var(--Grey-dark-2); }
+
+.heading-primary {
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-transform: uppercase; }
 
 .header {
   height: 7rem;
@@ -164,8 +195,45 @@ body {
     padding: 2.5rem;
     text-align: center; }
 
-.hotle-photo {
+.hotel-photo {
   display: flex; }
+  .hotel-photo__image {
+    width: 100%;
+    height: 100%; }
+
+.overview {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding-left: 3rem;
+  background-color: var(--Grey-light-1); }
+  .overview__stars {
+    margin-right: auto;
+    padding: 2.5rem 0; }
+  .overview__star, .overview__icon-location {
+    font-size: 1.6rem;
+    color: var(--Primary); }
+  .overview__location {
+    font-size: 1.2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center; }
+  .overview__rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    gap: .3rem;
+    padding: 0 2rem;
+    background-color: var(--Primary);
+    color: var(--Grey-light-1);
+    font-weight: 300; }
+  .overview__rating-averange {
+    font-size: 2.5rem; }
+  .overview__rating-count {
+    font-size: 1rem;
+    text-transform: uppercase; }
 
 .container {
   max-width: 120rem;

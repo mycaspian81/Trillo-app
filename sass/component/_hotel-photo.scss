@@ -1,11 +1,8 @@
-.hotle-photo {
+.hotel-photo {
     display: flex;
 
-    &__image-box {
-
-    }
-
     &__image {
-        
+        width: 100%;
+        height: 100%;
     }
 }
