@@ -6,9 +6,20 @@
     background-color: #fff;
     border-bottom: var(--line);
 
+    &__heading {
+
+        @include respond(seventh) {
+           margin-right: auto;
+        }
+    }
+
     &__stars {
         margin-right: auto;
         padding: 2.5rem 0;
+
+        @include respond(seventh) {
+           display: none;
+        }
     }
 
     &__star,

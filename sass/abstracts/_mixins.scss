@@ -1,0 +1,43 @@
+@mixin respond($break) {
+    @if ($break == first) {  // 1220 px
+        @media only screen and (max-width: 75em) {
+            @content
+        }
+    };
+
+    @if ($break == second) {  // 980 px
+        @media only screen and (max-width: 61.25em) {
+            @content
+        }
+    };
+
+    @if ($break == third) {  // 820 px
+        @media only screen and (max-width: 51.25em) {
+            @content
+        }
+    };
+
+    @if ($break == fourth) {  // 649 px
+        @media only screen and (max-width: 40.62em) {
+            @content
+        }
+    };
+
+    @if ($break == fifth) {  // 500 px
+        @media only screen and (max-width: 31.25em) {
+            @content
+        }
+    };
+
+    @if ($break == sixth) {  // 400 px
+        @media only screen and (max-width: 25em) {
+            @content
+        }
+    };
+
+    @if ($break == seventh) {  // 315 px
+        @media only screen and (max-width: 19.68em) {
+            @content
+        }
+    };
+}

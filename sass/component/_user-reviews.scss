@@ -42,6 +42,10 @@
         flex-direction: column;
         gap: .3rem;
     }
+    
+        &__text {
+            font-size: 1.4rem;
+        }
 
     &__user-name {
         text-transform: uppercase;
@@ -59,5 +63,20 @@
         font-size: 2.5rem;
         font-weight: 300;
         color: var(--Primary);
+    }
+
+    &__btn {
+        
+        @include respond(fourth) {
+            margin: 5rem auto 0;
+        }
+
+        @include respond(fifth) {
+            margin: 0;
+        }
+    }
+
+    @include respond(fourth) {
+        flex: 0 0 calc(100% / 2 - 2rem);
     }
 }

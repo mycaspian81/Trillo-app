@@ -1,12 +1,15 @@
 .logo {
     height: 3.25rem;
     cursor: pointer;
+
+    @include respond(fifth) {
+        padding-left: 2rem;
+    }
 }
 
 .search {
     flex: 0 0 40%;
     display: flex;
-    justify-content: center;
     align-items: center;
 
     &__input {
@@ -36,6 +39,11 @@
             color: var(--Grey-light-4);
             font-weight: 300;
         }
+
+        @include respond(fifth) {
+            width: 100%;
+            border-radius: 0;
+        }
     }
 
 
@@ -49,6 +57,12 @@
     &__icon {
         height: 2.25rem;
         width: 2.25rem;
+    }
+
+    @include respond(fifth) {
+        order: 1;
+        flex: 0 0 100%;
+        margin-bottom: 1rem;
     }
 }
 

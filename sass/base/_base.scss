@@ -7,7 +7,23 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; // font-size: 10px;
+
+    @include respond(second) {
+        font-size: 50%;  // font-size: 8px;
+    }
+
+    @include respond(third) {
+        font-size: 43.75%;  // font-size: 7px;
+    }
+
+    @include respond(fifth) {
+        font-size: 37.5%;  // font-size: 6px;
+    }
+
+    @include respond(sixth) {
+        font-size: 31.25%;  // font-size: 5px;
+    }
 }
 
 body {

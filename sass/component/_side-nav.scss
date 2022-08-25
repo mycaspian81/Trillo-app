@@ -9,6 +9,12 @@
         display: flex;
         flex-direction: column;
         gap: .5rem;
+
+        @include respond(third) {
+            flex-direction: row;
+            gap: 0;
+            align-items: center;
+        }
     }
 
     &__link:link,
@@ -23,6 +29,16 @@
         text-transform: uppercase;
         z-index: 10;
         position: relative;
+
+        @include respond(third) {
+            padding: 2rem;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        @include respond(fifth) {
+            flex-direction: column;
+        }
     }
 
     &__link::before {
@@ -50,6 +66,12 @@
         background-color: var(--Primary-light);
     }
 
+    &__item {
+        @include respond(third) {
+            flex: 0 0 25%;
+        }
+    }
+
     &__icon {
         font-size: 1.8rem;
     }
@@ -59,5 +81,13 @@
         color: var(--Grey-light-4);
         padding: 2.5rem;
         text-align: center;
+
+        @include respond(third) {
+            display: none;
+        }
+    }
+
+    @include respond(third) {
+        padding: 0;
     }
 }

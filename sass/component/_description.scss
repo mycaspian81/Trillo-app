@@ -37,6 +37,10 @@
             color: var(--Primary);
             font-weight: 300;
         }
+
+        @include respond(sixth) {
+            flex-direction: column;
+        }
     }
 
     &__recommend {
@@ -44,6 +48,10 @@
         justify-content: space-between;
         align-items: center;
         padding-top: 3rem;
+
+        @include respond(sixth) {
+            flex-direction: column;
+        }
     }
 
     &__count {
