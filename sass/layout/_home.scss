@@ -49,10 +49,14 @@
     justify-content: space-between;
 }
 
-.description {
+.description-box {
     flex: 0 0 60%;
     box-shadow: var(--light-shadow);
     background-color: #fff;
-    padding: 4rem 3rem;
+    padding: 3rem;
     border-radius: .2rem;
+}
+
+.cta-box {
+    padding: 3rem 3rem 8rem  3rem;
 }

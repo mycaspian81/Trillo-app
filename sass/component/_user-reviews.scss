@@ -13,7 +13,7 @@
         position: relative;
 
         &::before {
-            content: "“";
+            content: '\201C';
             display: inline-block;
             color: var(--Grey-light-3);
             font-size: 20rem;

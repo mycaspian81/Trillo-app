@@ -12,7 +12,53 @@
 
     &:hover {
         color: var(--Primary-dark);
-        }
+    }
+
+    &:focus {
+        animation: pulsate 1s infinite;
+    }
+}
+
+.btn {
+    border: none;
+    background-image: linear-gradient(to right, var(--Primary-light), var(--Primary-dark));
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 100px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+
+    &>* {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        text-transform: uppercase;
+        transition: all .2s;
+    }
+
+    &__visible {
+        padding: 1.5rem 6rem;
+    }
+
+    &__invisible {
+        padding: 1.5rem 0;
+        position: absolute;
+        top: -100%;
+        left: 0;
+    }
+
+    &:hover {
+        background-image: linear-gradient(to left, var(--Primary-light), var(--Primary-dark));
+    }
+
+    &:hover &__visible {
+        transform: translateY(100%);
+    }
+
+    &:hover &__invisible {
+        top: 0;
+    }
 
     &:focus {
     animation: pulsate 1s infinite;
